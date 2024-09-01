@@ -2,8 +2,13 @@ import javax.swing.*;
 import java.awt.*;
 
 public class PursePanel extends JPanel {
-    Purse purse;
+    private Purse purse;
+
     public void paintComponent(Graphics g) {
 
+    }
+
+    public void setPurse(Purse p) {
+        purse = p;
     }
 }
