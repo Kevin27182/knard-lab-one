@@ -63,6 +63,10 @@ public class Purse {
             return_string = return_string.concat(entry.getValue() + " " + name + suffix + "\n");
         }
 
+        if (return_string.isEmpty())
+            return_string = "Empty Purse\n";
+
+
         return return_string;
     }
 }

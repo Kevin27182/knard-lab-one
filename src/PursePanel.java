@@ -16,8 +16,6 @@ public class PursePanel extends JPanel {
 
         int yOffset = 0;
 
-        System.out.println(purse.cash.entrySet());
-
         // Loop through all entries and display
         for (Map.Entry<Denomination, Integer> entry : purse.cash.entrySet()) {
             // Get denomination and image
