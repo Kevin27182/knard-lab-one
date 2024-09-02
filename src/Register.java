@@ -22,16 +22,16 @@ import java.util.Arrays;
 public class Register {
 
     // Denomination records
-    private static final Denomination hundred_note = new Denomination("Hundred Note", 100.00, Form.NOTE, "");
-    private static final Denomination fifty_note = new Denomination("Fifty Note", 50.00, Form.NOTE, "");
-    private static final Denomination twenty_note = new Denomination("Twenty Note", 20.00, Form.NOTE, "");
-    private static final Denomination ten_note = new Denomination("Ten Note", 10.00, Form.NOTE, "");
-    private static final Denomination five_note = new Denomination("Five Note", 5.00, Form.NOTE, "");
-    private static final Denomination one_note = new Denomination("One Note", 1.00, Form.NOTE, "");
-    private static final Denomination quarter = new Denomination("Quarter", 0.25, Form.COIN, "");
-    private static final Denomination dime = new Denomination("Dime", 0.10, Form.COIN, "");
-    private static final Denomination nickel = new Denomination("Nickel", 0.05, Form.COIN, "");
-    private static final Denomination penny = new Denomination("Penny", 0.01, Form.COIN, "");
+    private static final Denomination hundred_note = new Denomination("Hundred Note", 100.00, Form.NOTE, "img/hundred_note.png");
+    private static final Denomination fifty_note = new Denomination("Fifty Note", 50.00, Form.NOTE, "img/fifty_note.png");
+    private static final Denomination twenty_note = new Denomination("Twenty Note", 20.00, Form.NOTE, "img/twenty_note.png");
+    private static final Denomination ten_note = new Denomination("Ten Note", 10.00, Form.NOTE, "img/ten_note.png");
+    private static final Denomination five_note = new Denomination("Five Note", 5.00, Form.NOTE, "img/five_note.png");
+    private static final Denomination one_note = new Denomination("One Note", 1.00, Form.NOTE, "img/one_note.png");
+    private static final Denomination quarter = new Denomination("Quarter", 0.25, Form.COIN, "img/quarter.png");
+    private static final Denomination dime = new Denomination("Dime", 0.10, Form.COIN, "img/dime.png");
+    private static final Denomination nickel = new Denomination("Nickel", 0.05, Form.COIN, "img/nickel.png");
+    private static final Denomination penny = new Denomination("Penny", 0.01, Form.COIN, "img/penny.png");
 
     // Array of denominations for use in loops
     private static final ArrayList<Denomination> denomination_array = new ArrayList<>(Arrays.asList(
