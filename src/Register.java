@@ -35,7 +35,7 @@ public class Register {
     private static final Denomination penny = new Denomination("Penny", 0.01, Form.COIN, "img/penny.png");
 
     // Array of denominations for use in loops
-    private static final ArrayList<Denomination> denomination_array = new ArrayList<>(Arrays.asList(
+    public static final ArrayList<Denomination> DENOMINATION_ARRAY = new ArrayList<>(Arrays.asList(
             hundred_note,
             fifty_note,
             twenty_note,
@@ -55,7 +55,7 @@ public class Register {
         double ticker = amt + 0.005;
 
         // Loop through set of denominations and add to purse
-        for (Denomination denomination : denomination_array) {
+        for (Denomination denomination : DENOMINATION_ARRAY) {
             if ((int) (ticker / denomination.amt()) > 0)
                 return_purse.add(denomination, (int) (ticker / denomination.amt()));
 
@@ -71,7 +71,7 @@ public class Register {
         boolean validated = false;
         double input_value = 0.0;
 
-        System.out.println("\nEnter the amount of change you wish to make:");
+        System.out.println("\nEnter the amount of change you wish to make and press <ENTER>:");
 
         // Input validation loop
         while (!validated) {
